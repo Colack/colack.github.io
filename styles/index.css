@@ -53,6 +53,7 @@ body {
     font-size: 35px;
     margin-left: 20px;
     animation: rainbow 7s infinite; /* This will keep the animation going indefinitely. */
+    text-decoration: none;
 }
 
 .rainbow-text:hover {
