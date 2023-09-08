@@ -6,8 +6,8 @@ canvas.height = 480;
 
 var game = {
     name: "CubeDood",
-    version: "1.3.0",
-    author: "CubeDood Studios"
+    version: "1.3.1",
+    author: "Celia Project"
 }
 
 var player = {
@@ -24,36 +24,6 @@ var player = {
     score: 0
 }
 var cubetop = {
-    x: 0,
-    y: 0,
-    w: 32,
-    h: 32,
-    velX: 0,
-    velY: 0,
-
-    direction: "right"
-}
-var maxcubetop = {
-    x: 0,
-    y: 0,
-    w: 32,
-    h: 32,
-    velX: 0,
-    velY: 0,
-
-    direction: "right"
-}
-var cubeBrute = {
-    x: 0,
-    y: 0,
-    w: 64,
-    h: 64,
-    velX: 0,
-    velY: 0,
-
-    direction: "right"
-}
-var cubie = {
     x: 0,
     y: 0,
     w: 32,
@@ -401,7 +371,20 @@ function drawFinalScreen() {
     ctx.fillStyle = "black";
     ctx.font = "15px Helvetica";
 
-    ctx.fillText("And so, CubeDood had gone through all the levels,", 75, 175);
+    ctx.fillText("CubeDood had completed all of the levels,", 75, 175);
+    ctx.fillText("and had entered CubeTops castle,", 75, 200);
+    ctx.fillText("But oh! That CubeTop! He had left without a trace.", 75, 225);
+    ctx.fillText("However, CubeTop had left a note.", 75, 250);
+    ctx.fillText("The note had some text written on it. It said:", 75, 275);
+    ctx.fillText("CubeDood! You may have completed all my levels,", 75, 300);
+    ctx.fillText("and have beaten level 15,", 75, 325);
+    ctx.fillText("But when I return, you will not see it coming.", 75, 350);
+    ctx.fillText("When I return, this whole world will come to fight you!", 75, 375);
+    ctx.fillText("To be continued... in CubeDood vs The World!", 75, 400);
+    ctx.fillText("Thank you for playing!", 75, 425);
+    ctx.fillText("Press space to return to the main menu.", 75, 450);
+
+    /*
     ctx.fillText("and entered a mysterious room, with a note.", 75, 200);
     ctx.fillText("It said:", 75, 225);
     ctx.fillText("Congratulations! You have completed the game!", 75, 250);
@@ -412,6 +395,7 @@ function drawFinalScreen() {
     ctx.fillText("'CubeDood, you may have beaten me this time,'", 75, 400);
     ctx.fillText("'but I will be back, and this entire world will come with me.'", 75, 425);
     ctx.fillText("To be continued... in CubeDood 2!", 75, 450);
+    */
 
     drawVersion();
     drawStudios();
@@ -668,239 +652,6 @@ function createCubeTop(cubetop) {
     ctx.beginPath();
     ctx.arc(cubetop.x + 16, cubetop.y - 5, 10, 0, Math.PI, true);
     ctx.fill();
-    ctx.closePath();
-}
-
-function createMaxCubeTop(maxcubetop) {
-    ctx.fillStyle = "black";
-    ctx.beginPath();
-    ctx.rect(maxcubetop.x, maxcubetop.y, maxcubetop.w, maxcubetop.h);
-    ctx.stroke();
-    ctx.closePath();
-    ctx.fillStyle = "white";
-    ctx.beginPath();
-    ctx.rect(maxcubetop.x, maxcubetop.y, maxcubetop.w, maxcubetop.h);
-    ctx.fill();
-    ctx.closePath();
-
-    switch (cubetop.direction) {
-        case "right":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.arc(maxcubetop.x + 10, maxcubetop.y + 10, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.arc(maxcubetop.x + 30, maxcubetop.y + 10, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.closePath();
-            break;
-        case "left":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.arc(maxcubetop.x + 3, maxcubetop.y + 10, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.arc(maxcubetop.x + 25, maxcubetop.y + 10, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.closePath();
-            break;
-        case "upr":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.arc(maxcubetop.x + 10, maxcubetop.y + 3, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.arc(maxcubetop.x + 30, maxcubetop.y + 3, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.closePath();
-            break;
-        case "upl":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.arc(maxcubetop.x + 3, maxcubetop.y + 3, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.arc(maxcubetop.x + 25, maxcubetop.y + 3, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.closePath();
-            break;
-    }
-
-    ctx.fillStyle = "black";
-    ctx.beginPath();
-    ctx.rect(maxcubetop.x + 3, maxcubetop.y - 5, 26, 5);
-    ctx.fill();
-    ctx.closePath();
-    ctx.fillStyle = "black";
-    ctx.beginPath();
-    ctx.rect(maxcubetop.x + 6, maxcubetop.y - 30, 20, 25);
-    ctx.fill();
-    ctx.closePath();
-    ctx.fillStyle = "gold";
-    ctx.beginPath();
-    ctx.arc(maxcubetop.x + 16, maxcubetop.y - 5, 10, 0, Math.PI, true);
-    ctx.fill();
-
-    ctx.fillStyle = "white";
-    ctx.beginPath();
-    ctx.moveTo(maxcubetop.x + 6, maxcubetop.y - 30);
-    ctx.lineTo(maxcubetop.x + 26, maxcubetop.y - 30);
-    ctx.lineTo(maxcubetop.x + 16, maxcubetop.y - 15);
-    ctx.fill();
-
-    ctx.fillStyle = "black";
-    ctx.beginPath();
-    ctx.moveTo(maxcubetop.x + 6, maxcubetop.y - 30);
-    ctx.lineTo(maxcubetop.x + 6, maxcubetop.y - 35);
-    ctx.lineTo(maxcubetop.x + 16, maxcubetop.y - 25);
-    ctx.fill();
-
-    ctx.fillStyle = "black";
-    ctx.beginPath();
-    ctx.moveTo(maxcubetop.x + 26, maxcubetop.y - 30);
-    ctx.lineTo(maxcubetop.x + 26, maxcubetop.y - 35);
-    ctx.lineTo(maxcubetop.x + 16, maxcubetop.y - 25);
-    ctx.fill();
-
-    ctx.fillStyle = "black";
-    ctx.beginPath();
-    ctx.rect(maxcubetop.x, maxcubetop.y + 22, 32, 10);
-    ctx.fill();
-
-    ctx.fillStyle = "gold";
-    ctx.beginPath();
-    ctx.arc(maxcubetop.x + 16, maxcubetop.y + 22, 5, 0, Math.PI, false);
-    ctx.fill();
-
-    ctx.fillStyle = "red";
-    ctx.beginPath();
-    ctx.arc(maxcubetop.x + 16, maxcubetop.y + 22, 3, 0, Math.PI, false);
-    ctx.fill();
-
-    ctx.fillStyle = "pink";
-    ctx.beginPath();
-    ctx.arc(maxcubetop.x + 16, maxcubetop.y + 22, 2, 0, Math.PI, false);
-    ctx.fill();
-
-    ctx.closePath();
-}
-
-function createCubeBrute(cubeBrute) {
-    ctx.fillStyle = "white";
-    ctx.beginPath();
-    ctx.rect(cubeBrute.x, cubeBrute.y - 32, cubeBrute.w, cubeBrute.h);
-    ctx.fill();
-    ctx.closePath();
-
-    switch (cubeBrute.direction) {
-        case "right":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.rect(cubeBrute.x + 20, cubeBrute.y - 5, 10, 15);
-            ctx.fill();
-            ctx.rect(cubeBrute.x + 55, cubeBrute.y - 5, 10, 15);
-            ctx.fill();
-            ctx.closePath();
-            break;
-        case "left":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.rect(cubeBrute.x, cubeBrute.y - 5, 10, 15);
-            ctx.fill();
-            ctx.rect(cubeBrute.x + 35, cubeBrute.y - 5, 10, 15);
-            ctx.fill();
-            ctx.closePath();
-            break;
-        case "upr":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.rect(cubeBrute.x + 20, cubeBrute.y - 30, 10, 15);
-            ctx.fill();
-            ctx.rect(cubeBrute.x + 55, cubeBrute.y - 30, 10, 15);
-            ctx.fill();
-            ctx.closePath();
-            break;
-        case "upl":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.rect(cubeBrute.x, cubeBrute.y - 30, 10, 15);
-            ctx.fill();
-            ctx.rect(cubeBrute.x + 35, cubeBrute.y - 30, 10, 15);
-            ctx.fill();
-            ctx.closePath();
-            break;
-    }
-}
-
-function createCubie(cubie) {
-    ctx.fillStyle = "white";
-    ctx.beginPath();
-    ctx.rect(cubie.x, cubie.y, cubie.w, cubie.h);
-    ctx.fill();
-    ctx.closePath();
-
-    switch (cubie.direction) {
-        case "right":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.arc(cubie.x + 10, cubie.y + 10, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.arc(cubie.x + 30, cubie.y + 10, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.closePath();
-
-            ctx.fillStyle = "#F6E1D3";
-            ctx.beginPath();
-            ctx.arc(cubie.x + 10, cubie.y + 15, 3, 0, Math.PI * 4, true);
-            ctx.fill();
-            ctx.arc(cubie.x + 30, cubie.y + 15, 3, 0, Math.PI * 4, true);
-            ctx.fill();
-            break;
-        case "left":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.arc(cubie.x + 3, cubie.y + 10, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.arc(cubie.x + 25, cubie.y + 10, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.closePath();
-
-            ctx.fillStyle = "#F6E1D3";
-            ctx.beginPath();
-            ctx.arc(cubie.x + 3, cubie.y + 15, 3, 0, Math.PI * 4, true);
-            ctx.fill();
-            ctx.arc(cubie.x + 25, cubie.y + 15, 3, 0, Math.PI * 4, true);
-            ctx.fill();
-            break;
-        case "upr":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.arc(cubie.x + 10, cubie.y + 3, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.arc(cubie.x + 30, cubie.y + 3, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.closePath();
-
-            ctx.fillStyle = "#F6E1D3";
-            ctx.beginPath();
-            ctx.arc(cubie.x + 10, cubie.y + 8, 3, 0, Math.PI * 4, true);
-            ctx.fill();
-            ctx.arc(cubie.x + 30, cubie.y + 8, 3, 0, Math.PI * 4, true);
-            ctx.fill();
-            break;
-        case "upl":
-            ctx.fillStyle = "black";
-            ctx.beginPath();
-            ctx.arc(cubie.x + 3, cubie.y + 3, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.arc(cubie.x + 25, cubie.y + 3, 3, 0, Math.PI, true);
-            ctx.fill();
-            ctx.closePath();
-
-            ctx.fillStyle = "#F6E1D3";
-            ctx.beginPath();
-            ctx.arc(cubie.x + 3, cubie.y + 8, 3, 0, Math.PI * 4, true);
-            ctx.fill();
-            ctx.arc(cubie.x + 25, cubie.y + 8, 3, 0, Math.PI * 4, true);
-            ctx.fill();
-            break;
-    }
     ctx.closePath();
 }
 
@@ -1256,23 +1007,11 @@ function createDebugScreen() {
         cubetop.x = 50;
         cubetop.y = 150;
 
-        cubie.x = 150;
-        cubie.y = 150;
-
-        maxcubetop.x = 200;
-        maxcubetop.y = 150;
-
-        cubeBrute.x = 300;
-        cubeBrute.y = 150;
-
         changedValues = true;
     }
 
     createCubeDood(player);
     createCubeTop(cubetop);
-    createCubeBrute(cubeBrute);
-    createCubie(cubie);
-    createMaxCubeTop(maxcubetop);
 }
 
 function resetEditorLevel() {
