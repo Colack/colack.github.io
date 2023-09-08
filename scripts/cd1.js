@@ -73,8 +73,8 @@ var physics = {
 
 var assets = {
     sfx: {
-        jump: "assets/sfx/jump.mp3",
-        win: "assets/sfx/win.mp3",
+        jump: "../assets/sfx/jump.mp3",
+        win: "../assets/sfx/win.mp3",
     },
     ost: {
         newMenu: "../assets/ost/The Memory Snatcher.mp3",
