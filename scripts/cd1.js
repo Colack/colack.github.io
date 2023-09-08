@@ -87,8 +87,8 @@ var assets = {
         quad: "../assets/ost/Quadrilateral Collateral.mp3",
     },
     sprites: {
-        flag: "assets/sprites/flag.png",
-        logo: "assets/sprites/logo.png",
+        flag: "../assets/sprites/flag.png",
+        logo: "../assets/sprites/logo.png",
     },
     symbols: {
         enabled: "✓",
