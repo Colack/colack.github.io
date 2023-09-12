@@ -64,6 +64,13 @@ body {
     animation: rainbow 0.5s infinite;
 }
 
+.centercanvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .rainbow-text-link {
     animation: rainbow 7s infinite; /* This will keep the animation going indefinitely. */
 }

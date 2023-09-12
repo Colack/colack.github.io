@@ -51,7 +51,7 @@ body {
 
 .rainbow-text {
     font-size: 35px;
-    margin-left: 20px;
+    margin-left: 10px;
     animation: rainbow 7s infinite; /* This will keep the animation going indefinitely. */
     text-decoration: none;
 }
