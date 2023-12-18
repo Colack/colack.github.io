@@ -15,5 +15,6 @@
 [] SATQTSTC Trilogy Remaster
 [] Jooz!
 [] Studio Fighters
+[] Angry Birds Discord Bot
 
 List is not in any particular order.
