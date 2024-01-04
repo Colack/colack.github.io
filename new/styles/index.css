@@ -76,6 +76,45 @@ body {
     animation: rainbow 0.5s infinite;
 }
 
+@keyframes watermelon-katana {
+    0%  {color: #ff0000;}
+    14%  {color: #000000;}
+    28%  {color: #25f400;}
+    42%  {color: #ff0000;}
+    57%  {color: #000000;}
+    71%  {color: #ff0000;}
+    85%  {color: #25f400;}
+    100% {color: #ff0000;}
+
+}
+
+.watermelon-katana-text {
+    font-size: 35px;
+    margin-left: 10px;
+    animation: watermelon-katana 7s infinite; /* This will keep the animation going indefinitely. */
+    text-decoration: none;
+}
+
+.watermelon-katana-text:hover {
+    animation: watermelon-katana 1s infinite;
+}
+
+.watermelon-katana-text:active {
+    animation: watermelon-katana 0.5s infinite;
+}
+
+.watermelon-katana-text-link {
+    animation: watermelon-katana 7s infinite; /* This will keep the animation going indefinitely. */
+}
+
+.watermelon-katana-text-link:hover {
+    animation: watermelon-katana 1s infinite;
+}
+
+.watermelon-katana-text-link:active {
+    animation: watermelon-katana 0.5s infinite;
+}
+
 .image-stuff {
     border-radius: 50%;
     transition : 0.5s;
@@ -107,3 +146,28 @@ body {
     outline: none;
 
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }

@@ -1,4 +1,4 @@
-var titleElement = document.getElementById('aboutTitle');
+var titleElement = document.getElementById('home');
 var titleText = document.getElementById('jacktext');
 
 const aboutMeText = [
@@ -43,6 +43,9 @@ let jackpageTextIndex = 0;
 
 titleElement.innerText = aboutMeText[Math.floor(Math.random() * aboutMeText.length)];
 
+titleElement.style.color = getRandomColor();
+
+
 // If the user presses shift+enter, it will generate a random color.
 document.addEventListener('keydown', function(event) {
     switch (event.key) {
@@ -61,7 +64,7 @@ document.addEventListener('keydown', function(event) {
                 if (jackpageTextIndex >= jackpageText.length) {
                     jackpageTextIndex = 0;
                 }
-                titleText.innerText = jackpageText[jackpageTextIndex];
+                home.innerText = jackpageText[jackpageTextIndex];
             }
             break;
         case 'Control':
