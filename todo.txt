@@ -1,20 +1,18 @@
-[] CubeDood Remastered
-[] ApplesC
-[] GAF
-[] Website Update
-[] Makima
-[] PyChat
-[] RecceBoon
-[] OtherWorld
-[] Orbital BringBack
-[] message-filter V2
-[] Bunsen
-[] BitCity
-[] Code.org OS
-[] Friction
-[] SATQTSTC Trilogy Remaster
-[] Jooz!
-[] Studio Fighters
-[] Angry Birds Discord Bot
+- [ ] Makima V0.3-Windows-C
+- [ ] Makima V0.1-Windows-C++
+- [ ] Website Update (You can visit the beta [here](https://watermelonkatana.com/new/index).)
+- [ ] CubeDood Remastered
+- [ ] Bunsen V0.2
+- [ ] ApplesC, GAF, & ApplesDocs
+- [ ] Py-Chat Security Update
+- [ ] RecceBoon
+- [ ] Orbital Revival
+- [ ] BitCity
+- [ ] OtherWorld (Possibility. Expect something like otherworld.watermelonkatana.com)
+- [ ] Message-Filter V1.1
+- [ ] SATQTSTC Trilogy
+- [ ] Chronicles of the Elemental Blades
+- [ ] Studio Fighters!
+- [ ] CodeHS Answer Repo Re-Write
 
 List is not in any particular order.
