@@ -15,10 +15,6 @@
         <h1 id="jacktext" class="rainbow-text"><a href="../index.html" class="rainbow-text">Jack's Page</a></h1>
     </div>
 
-    <div class="header">
-        <h1 class="construction-text">THIS WEBSITE IS STILL UNDER CONSTRUCTION</h1>
-    </div>
-
     <h2 class="space-text-left">Games</h2>
     <ul class="space-text-left">
         <li><a class="rainbow-text-link" href="../games/cd1.html">CubeDood in "The Memory Snatcher"</a></li>
@@ -46,18 +42,4 @@
     </div>
 </body>
 <script src="../scripts/nocss.js"></script>
-<script>
-    function mainFunc() {
-        // Get the text from the text box, see if its a number, then send them to ../blogs/'number'.text
-        var x = document.getElementById("myInput").value;
-
-        // Check if the input is a number
-        if (isNaN(x)) {
-            alert("Please enter a number.");
-        } else {
-            // If it is a number, send them to the website
-            window.location.href = "../blogs/" + x + ".txt";
-        }
-    }
-</script>
 </html>
