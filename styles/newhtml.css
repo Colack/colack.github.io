@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(255, 255, 255);
+    background: #202731;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.yellow {
+    background: orangered;
+}
+
+.red {
+    background: #dd3f31;
+}
+
+.pink {
+    background: #ff0066;
+}
+
+.dark {
+    background: #0f0f10;
+}
+
+.curve {
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #202731;
+    transform: translate(85%, 60%);
+}
+
+.curve::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: orangered;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+.img-funne {
+    border-radius: 50%;
+}
+
+a {
+    color: yellow;
+}
+
+* {
+     box-sizing: border-box;
+}   
+
+.left_navbar {
+    height: calc(100vh - 40px);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.column2 {
+    float:left;
+    width: 25%;
+    padding: 5px;
+}
+
+img:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.centercanvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-style:solid;
+    border-color:white;
+}
