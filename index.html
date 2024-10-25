@@ -23,7 +23,7 @@
     <script>
         async function fetchReadme() {
             try {
-                const url = `https://github.com/colack/colack.github.io/markdown/index.md`
+                const url = `https://raw.githubusercontent.com/Colack/site/refs/heads/main/markdown/index.md`
                 const response = await fetch(url, {
                     headers: { 'Accept': 'application/vnd.github.v3.raw' }
                 });
