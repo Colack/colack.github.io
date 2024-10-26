@@ -15,12 +15,27 @@
                 <button onclick="window.location.href='https://github.com/colack'">GitHub</button>
                 <button onclick="window.location.href='https://www.linkedin.com/in/jack-spencer-83a0a7277/'">LinkedIn</button>
             </div>
+            <br>
+            <div class="profile-buttons">
+                <button onclick="darkMode()">Toggle Dark Mode</button>
+            </div>
         </div>
         <div id="content">Loading...</div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
+        function darkMode() {
+            let isDark = document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+            }
+        });
+
         async function fetchReadme() {
             try {
                 const url = `https://raw.githubusercontent.com/Colack/site/refs/heads/main/markdown/index.md`
