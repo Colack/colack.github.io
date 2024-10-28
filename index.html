@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack Spencer</title>
     <link rel="stylesheet" href="frontend/css/index.css">
+    <link rel="icon" href="frontend/img/logo.ico">
 </head>
 <body>
     <div class="container">
@@ -15,7 +16,6 @@
                 <button onclick="window.location.href='https://github.com/colack'">GitHub</button>
                 <button onclick="window.location.href='https://www.linkedin.com/in/jack-spencer-83a0a7277/'">LinkedIn</button>
             </div>
-            <br>
             <div class="profile-buttons">
                 <button onclick="darkMode()">Toggle Dark Mode</button>
             </div>
@@ -24,33 +24,11 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="frontend/js/fetchMarkdown.js"></script>
     <script>
-        function darkMode() {
-            let isDark = document.body.classList.toggle('dark-mode');
-            localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+        window.onload = function() {
+            fetchMarkdown('https://raw.githubusercontent.com/Colack/site/refs/heads/main/frontend/md/index.md');
         }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            if (localStorage.getItem('darkMode') === 'enabled') {
-                document.body.classList.add('dark-mode');
-            }
-        });
-
-        async function fetchReadme() {
-            try {
-                const url = `https://raw.githubusercontent.com/Colack/site/refs/heads/main/markdown/index.md`
-                const response = await fetch(url, {
-                    headers: { 'Accept': 'application/vnd.github.v3.raw' }
-                });
-                const markdown = await response.text();
-                const htmlContent = marked.parse(markdown);
-                document.getElementById('content').innerHTML = htmlContent;
-            } catch (error) {
-                console.error('Error fetching README:', error);
-                document.getElementById('content').innerText = 'Failed to load README content';
-            }
-        }
-        window.onload = fetchReadme;
     </script>
 </body>
 </html>
