@@ -16,13 +16,13 @@
 
 ## About Me
 
-I'm Jack Spencer, a passionate developer committed to creating practical applications that enhance productivity and streamline workflows. I hold a firm belief in the open source community and environment as it provides opportunity for more diverse input; creating a better world for future generations.  
-
-Experiences I have, are journeys such as being the *current* president of [Hanford High School's](https://hanford.rsd.edu/) programming club, which has given me opportunities for leadership, mentoring new programmers, and working on maintaining a positive environment for programmers of all levels, whether beginner or expert.
+I'm Jack Spencer, a passionate developer committed to creating practical applications that enhance productivity and streamline workflows. I hold a firm belief in the open source community and environment as it provides opportunity for more diverse input; creating a better world for future generations.
 
 ## Experience
 
 My experience as a self-taught developer has spanned across 4 years, leading me to develop many skills, through trial and error, and working on projects for a diverse group of people. I have capability and experience in all levels of development, leading to me having a full-stack skills.  
+
+I can demonstrate soft skills, such a leadership, project management, teamwork, and maintaining a organized task based system. This can be represented in positions I have held, such as being the *president* of [Hanford High Schools](https://github.com/hhs-coding-club) Coding Club. The experiences I have from this club, have shown me diverse opinions from many sources, and how teamwork can help create complicated and measurable projects.
 
 This would be represented by my frontend skills, such as designing and developing websites and web-applications. My backend skills help with creating software servers and robots for social media. I also am able to work on middleware, such as infastructure, API routes, and data management.
 
