@@ -50,5 +50,6 @@ With my usage of multiple Operating Systems, I still tend to lean towards linux 
 
 ## Site Links
 
+- [Stories](https://colack.github.io/site/stories)
 - [Games](https://colack.github.io/games)
 - [Projects](https://colack.github.io/projects)
