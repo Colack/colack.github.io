@@ -8,30 +8,15 @@
     <link rel="icon" href="frontend/img/logo.ico">
 </head>
 <body>
-<div class="container">
-    <div class="profile">
-        <p class="profile-text">Jack Spencer <br> He / Him</p>
-        <div class="profile-buttons">
-            <button onclick="window.location.href='https://github.com/colack'">GitHub</button>
-            <button onclick="window.location.href='https://www.linkedin.com/in/jack-spencer-83a0a7277/'">LinkedIn</button>
-        </div>
-        <div class="profile-buttons">
-            <button onclick="darkMode()">Toggle Dark Mode</button>
-        </div>
-    </div>
-    <div id="content">
-        <h2>Welcome to My Stories</h2>
-        <p>Explore my written works below. Click on the titles to read more.</p>
-        <div id="story-list">
-        </div>
-    </div>
+<div class="profile-buttons">
+    <button onclick="darkMode()">Toggle Dark Mode</button>
 </div>
+<div id="story-list">
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="frontend/js/fetchMarkdown.js"></script>
 <script>
     window.onload = function() {
-        fetchMarkdown('https://raw.githubusercontent.com/Colack/site/refs/heads/main/frontend/md/index.md');
         fetchStoryList('https://raw.githubusercontent.com/Colack/site/refs/heads/main/frontend/md/stories.md');
     }
 </script>
