@@ -1,8 +1,9 @@
-# Jack Spencer ~ Developer, Contributor, and Designer 👨‍💻 
-
-<div style="text-align: center;">
-    <img src="https://github.com/Colack/colack.github.io/blob/main/frontend/img/banner.png?raw=true" alt="Banner Image" style="width:20%; height:auto;">
+<div style="text-align: center; margin: 20px 0;">
+    <h1>Jack - Dev 👨‍💻</h1>
+    <p style="font-size: 1.2em;">Passionate about creating impactful software solutions 🌟</p>
 </div>
+
+<hr>
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
