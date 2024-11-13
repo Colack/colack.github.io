@@ -1,4 +1,6 @@
-# Jack ~ Developer, Contributor, and Designer
+# Jack Spencer ~ Developer, Contributor, and Designer 👨‍💻 
+
+![Banner](https://github.com/colack/site/blob/main/frontend/img/banner.png)
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -14,42 +16,40 @@
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
-## About Me
+## About Me 
+Hi, I'm **Jack Spencer**, a passionate developer dedicated to creating applications that boost productivity and simplify workflows.  
 
-I'm Jack Spencer, a passionate developer committed to creating practical applications that enhance productivity and streamline workflows. I hold a firm belief in the open source community and environment as it provides opportunity for more diverse input; creating a better world for future generations.
+I firmly believe in the power of the open-source community to foster innovation and inclusivity, paving the way for a brighter future. 🚀
 
-## Experience
+## Experience 
+### Self-Taught Developer 
+With over 4 years of experience in software development, I have honed my skills through various projects and collaborations. 
 
-My experience as a self-taught developer has spanned across 4 years, leading me to develop many skills, through trial and error, and working on projects for a diverse group of people. I have capability and experience in all levels of development, leading to me having a full-stack skills.  
+My journey has equipped me with a full-stack skill set, allowing me to handle both front-end and back-end development seamlessly. 
 
-I can demonstrate soft skills, such a leadership, project management, teamwork, and maintaining a organized task based system. This can be represented in positions I have held, such as being the *president* of [Hanford High Schools](https://github.com/hhs-coding-club) Coding Club. The experiences I have from this club, have shown me diverse opinions from many sources, and how teamwork can help create complicated and measurable projects.
-
-This would be represented by my frontend skills, such as designing and developing websites and web-applications. My backend skills help with creating software servers and robots for social media. I also am able to work on middleware, such as infastructure, API routes, and data management.
-
-The way that I interpret new information when it comes to learning new skills grants me the ability to aquire new skills very rapidly. I have spent major amounts of time and resources doing in-person courses, online classes, and reading college level material related to programming, all to improve my skills as a developer.
+### Leadership & Soft Skills 
+- **Leadership:** President of [Hanford High Schools Coding Club](https://github.com/hhs-coding-club)
+- **Project Management:** Managed multiple projects, ensuring timely delivery and high-quality results.
+- **Teamwork:** Collaborated with diverse teams to achieve common goals.
 
 ## Current Projects
+### [WatermelonKatana](https://github.com/dragonfiregames/watermelonkatana) 🍉🗡️ 
+An open-source platform for new developers to publish their games in a supportive environment.
 
-#### [WatermelonKatana](https://github.com/dragonfiregames/watermelonkatana)
-
-A open-source website made for brand new developers wanting a open environment to publish their games.
-
-#### [CubeDood: ReCubed](https://github.com/hhs-coding-club/recubed)
-
-The long awaited reboot to the CubeDood series.
+### [CubeDood: ReCubed](https://github.com/hhs-coding-club/recubed) 🎲
+The highly anticipated reboot of the CubeDood series.
 
 ## Technical Skills
-
-- **Languages**: JavaScript, TypeScript, Python, C, C++, C#, Ruby, Rust, HTML5, CSS3
-- **Frameworks/Libraries**: Node.js, various frontend libraries as necessary.
-- **Development Tools**: Git, Bash scripting, and Linux (Debian & Arch Based).
+- **Languages:** JavaScript, TypeScript, Python, C, C++, C#, Ruby, Rust, HTML5, CSS3
+- **Frameworks/Libraries:** Node.js, various frontend libraries 
+- **Tools:** Git, Bash scripting, Linux (Debian & Arch Based) 
 
 ## Development Environment
+I prefer using **Garuda Linux**, an Arch-based OS known for its powerful command-line tools and efficient package management. 
 
-With my usage of multiple Operating Systems, I still tend to lean towards linux environments, specifically **Garuda Linux**, an Arch-based Linux environment, as its powerful command-line tools and package management system helps make programming more efficient for me. I also appreciate the open source and free desktop environments.
+The open-source nature of Linux aligns perfectly with my values and helps me optimize my workflow.
 
-## Site Links
-
-- [Stories](https://colack.github.io/site/stories)
-- [Games](https://colack.github.io/games)
-- [Projects](https://colack.github.io/projects)
+## Links 
+- [Stories](https://colack.github.io/site/stories) 📖
+- [Games](https://colack.github.io/games) 🎮
+- [Projects](https://colack.github.io/projects) 🛠️
