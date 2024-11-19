@@ -22,6 +22,10 @@ function App() {
     );
   }, []);
 
+  useEffect(() => {
+    document.body.classList.toggle("dark-mode", darkMode);
+  }, [darkMode]);
+
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
   return (
